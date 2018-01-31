@@ -23,7 +23,7 @@
 <p>
   Add a new comment:<br>
   <%= form_for(@post) do |f| %>
-    <%= f.fields_for :comments @comment.build_user do |builder| %>
+    <%= f.fields_for :comments @post.build_category do |builder| %>
       <%= render '/comments/form', :f => builder %>
     <% end %>
   <% end %>
