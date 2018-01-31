@@ -2,6 +2,7 @@
 
 <%= form_for @comment do |f| %>
   <%= f.label "Content" %>
+  <input type="text" name="comment[content]" id="comment_content"><br>
   <%= f.text_field :content %><br>
 
   <%= f.collection_select :user_id, User.all, :id, :username, {include_blank: 'None'} %><br>
