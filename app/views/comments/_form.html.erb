@@ -18,9 +18,8 @@
   <% end %>
 </p>
   <%if @post != nil %>
-<p>
-    Post_id: <input type="check_box" style="display:none" checked="checked" name="comment[post_id]" value="<%= @post.id %>"></label>
-</p>
+    <input type="check_box" style="display:none" checked="checked" name="comment[post_id]" value="<%= @post.id %>"></label>
   <% end %>
+  
   <%= f.submit class: 'btn btn-default' %>
 <% end %>
