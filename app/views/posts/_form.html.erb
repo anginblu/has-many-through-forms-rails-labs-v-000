@@ -9,7 +9,7 @@
   <%= f.text_area :content %>
 </p>
 <p>
-  <%= f.label "Select from existing categories:" %>
+  <%= f.label "Select from existing categories:" %><br>
   <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |id| %>
     <%= id.label %>
     <%= id.check_box %>
