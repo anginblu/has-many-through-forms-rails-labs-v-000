@@ -11,6 +11,7 @@
 <p>
   <%= f.label "Select from existing categories:" %>
   <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |id| %>
+    <%= id.label %>
     <%= id.check_box %>
   <% end %>
 </p>
