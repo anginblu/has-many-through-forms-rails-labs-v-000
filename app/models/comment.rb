@@ -5,7 +5,7 @@ class Comment < ActiveRecord::Base
 
   def user_attributes=(user_attributes)
     user_attributes.each do |i, user_attribute|
-      unless user_attribute.=nil?
+      unless user_attribute.nil?
         user = User.find_or_create_by(user_attribute)
         self.user = user
       end
