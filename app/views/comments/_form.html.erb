@@ -7,7 +7,7 @@
 </p>
 <p>
   <%= f.label "Select from existing users:" %>
-  <%= f.collection_select :user_id, User.all, :id, :username, {include_blank: 'None'} do |user| %>
+  <%= f.collection_select :user_id, User.all, :id, :username do |user| %>
     <%= user.check_box %>
   <% end %>
 </p>
