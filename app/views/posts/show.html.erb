@@ -23,6 +23,6 @@
 <p>
   Add a new comment:<br>
   <%= form_for Comment.new, url: new_comment_path, method: :post do |f| %>
-    <%= render 'form' %>
+    <%= render 'comments/new' %>
   <% end %>
 </p>
