@@ -1,6 +1,7 @@
 <h2><%= @post.title %></h2>
 <h3>Content: <%= @post.content %> </h3>
 
+<p>
 <ul>
   <% @comments.each do |i| %>
     <li><%= i.content %></li>
@@ -18,6 +19,6 @@
     <li><%= i.name %></li>
   <% end %>
 </ul>
-
+</p>
 <p>
 </p>
