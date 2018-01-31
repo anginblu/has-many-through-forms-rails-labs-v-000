@@ -10,8 +10,8 @@
 </p>
 <p>
   <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |id| %>
-    <%= user.label "Select from existing categories:" %>
-    <%= user.check_box %>
+    <%= id.label "Select from existing categories:" %>
+    <%= id.check_box %>
   <% end %>
 </p>
 <p>
