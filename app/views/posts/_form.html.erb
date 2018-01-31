@@ -22,14 +22,6 @@
   <% end %>
 </p>
 <p>
-  <%= f.label "Comment:" %>
-  <input type="text" name="comment[content]" id="comment_content"><br>
-  <%= f.label "Select from existing users:" %>
-  <%= f.collection_select :user_id, User.all, :id, :username, {include_blank: 'None'} do |user| %>
-    <%= user.check_box %>
-  <% end %>
-</p>
-<p>
   <%= f.submit %>
 </p>
 <% end %>
