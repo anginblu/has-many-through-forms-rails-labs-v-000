@@ -6,4 +6,6 @@ class Post < ActiveRecord::Base
   accepts_nested_attributes_for :categories, :reject_if => proc { |attributes| attributes['name'].blank? }
   accepts_nested_attributes_for :comments
 
+  
+
 end
