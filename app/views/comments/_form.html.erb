@@ -7,6 +7,7 @@
   <!-- <%= f.text_field :content %><br> -->
 </p>
 <p>
+  <%= f.label "Select from existing users:" %>
   <%= f.collection_select :user_id, User.all, :id, :username, {include_blank: 'None'} do |user| %>
     <%= user.label "Select from existing users:" %>
     <%= user.check_box %>
