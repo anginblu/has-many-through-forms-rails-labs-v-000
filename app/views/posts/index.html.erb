@@ -1,7 +1,9 @@
 <h2>Posts</h2>
 
-<p>
+<ul>
 <% @posts.each do |i| %>
-  <p><%= i.title %></p>
+  <li>
+    <p><%= i.title %></p>
+  </li>
 <% end %>
-</p>
+</ul>
