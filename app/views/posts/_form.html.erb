@@ -12,6 +12,7 @@
   <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |id| %>
     <%= user.label "Select from existing categories:" %>
     <%= user.check_box %>
+  <% end %>
 </p>
 <p>
   <%= f.fields_for :categories, @post.categories.build do |categories_fields| %>
