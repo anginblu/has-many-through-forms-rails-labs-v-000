@@ -22,7 +22,8 @@
 </p>
 <p>
   Add a new comment:<br>
-  <%= fields_for @post :comments do |builder| %>
+  <%= form_for(@post) do |f| %>
+    <%= fields_for @post :comments do |builder| %>
    <%= render '/comments/form', :f => builder %>
   <% end %>
 </p>
