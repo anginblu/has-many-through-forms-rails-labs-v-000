@@ -23,8 +23,6 @@
 <p>
   Add a new comment:<br>
   <%= form_for Comment.new, url: new_comment_path, method: :post do |f| %>
-    <%= f.fields_for :comments @post.category.build do |builder| %>
-      <%= render '/comments/form', :f => builder %>
-    <% end %>
+    
   <% end %>
 </p>
