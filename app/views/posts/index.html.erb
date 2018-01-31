@@ -4,7 +4,7 @@
 <% @posts.each do |i| %>
   <li>
     <%= link_to i.title, i %>:
-    <%= i.content%> by <%= i.users%>
+    <%= i.content%> by <% i.users.each do |user| %>
   </li>
 <% end %>
 </ul>
