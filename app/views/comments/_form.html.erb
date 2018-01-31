@@ -12,6 +12,7 @@
   <% end %>
 </p>
 <p>
+  <% if %>
   <%= f.fields_for :user, @comment.build_user do |user_fields| %>
     <%= user_fields.label "New Username:" %>
     <%= user_fields.text_field :username %>
