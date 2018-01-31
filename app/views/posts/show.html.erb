@@ -25,6 +25,6 @@
   <%= form_for @comment, url: comments_path, method: :post do |f| %>
     <%= render 'comments/form' %>
     <input type="text" name="comment[post]" value="<%= @post.id %>">
-    <input type="text" name="comment[post]" value="<%= @post.id %>">
+    <input type="text" name="comment[user]" value="<%= @post.id %>">
   <% end %>
 </p>
