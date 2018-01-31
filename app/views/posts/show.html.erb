@@ -23,6 +23,6 @@
 <p>
   Add a new comment:<br>
   <%= f.fields_for :comments do |builder| %>
-   <%= render 'question_fields', :f => builder %>
+   <%= render 'comment_fields', :f => builder %>
   <% end %>
 </p>
