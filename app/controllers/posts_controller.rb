@@ -4,6 +4,7 @@ class PostsController < ApplicationController
     @comments = @post.comments
     @users = @post.users
     @categories = @post.categories
+    @comment = Comment.new
   end
 
   def index
