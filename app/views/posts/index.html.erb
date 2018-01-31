@@ -3,7 +3,7 @@
 <ul>
 <% @posts.each do |i| %>
   <li>
-    <p><%= i.title %></p>
+    <%= link_to i.title, i %>
     
   </li>
 <% end %>
