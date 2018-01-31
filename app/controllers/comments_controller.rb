@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.create(comment_params)
-    @comment.update()
+    if @comment.update()
     redirect_to comment_path(@comment)
   end
 
