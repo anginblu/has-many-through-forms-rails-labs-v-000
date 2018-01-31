@@ -22,6 +22,7 @@
 </p>
 <p>
   Add a new comment:<br>
-  <%= render 'form', Comment.new %>
-  
+  <%= f.fields_for :questions do |builder| %>
+   <%= render 'question_fields', :f => builder %>
+  <% end %>
 </p>
