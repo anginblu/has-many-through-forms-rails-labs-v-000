@@ -24,6 +24,6 @@
   <h4>Add a new comment:</h4>
   <%= form_for @comment, url: comments_path, method: :post do |f| %>
     <%= render 'comments/form' %>
-    <input type="text" name="" value="">
+    <input type="text" name="comment[]" value="">
   <% end %>
 </p>
