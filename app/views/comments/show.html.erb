@@ -1,2 +1,2 @@
-<h2><%= @user.username %> commented: <%= @comment.content %></h2>
+<h2><%= @user.username %> commented: "<%= @comment.content %>"</h2>
 <h4>in <%= link_to @comment.post.title, @comment %></h4>
